@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 线程池配置 start 可配置多个 -->
+    <!-- 公共线程池（初始化系统信息等公共操作使用） -->
+    <threadPool>
+        <key>default</key>
+        <type>1</type><!-- 1:SynchronousQueue ,2:LinkedBlockingQueue,3: -->
+        <corePoolSize>10</corePoolSize>
+        <maxPoolSize>100</maxPoolSize>
+        <timeout>0</timeout>
+        <showThreadQueueSize>10</showThreadQueueSize>
+    </threadPool>
+    <threadPool>
+        <key>thrift</key>
+        <type>2</type>
+        <timeout>0</timeout>
+        <showThreadQueueSize>10</showThreadQueueSize>
+    </threadPool>
+    <threadPool>
+        <key>thriftWithQueueSize</key>
+        <type>3</type>
+        <timeout>0</timeout>
+        <initQueueSize>100</initQueueSize>
+        <showThreadQueueSize>10</showThreadQueueSize>
+    </threadPool>
+    <threadPool>
+        <key>thriftWithFair</key>
+        <type>4</type>
+        <timeout>0</timeout>
+        <fair>true</fair>
+        <showThreadQueueSize>10</showThreadQueueSize>
+    </threadPool>
+</root>
