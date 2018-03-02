@@ -1,11 +1,14 @@
-package com.github.benhaixiao.concurrent;
+package com.github.benhaixiao.concurrent.demo.springDemo;
 
 
+import com.github.benhaixiao.concurrent.CustomThreadPool;
+import com.github.benhaixiao.concurrent.CustomThreadPoolManager;
+import com.github.benhaixiao.concurrent.DefaultRejectedExecutionHandler;
+import com.github.benhaixiao.concurrent.LoggingThreadFactory;
 import com.github.benhaixiao.concurrent.configure.ConfigureContext;
 import com.github.benhaixiao.concurrent.configure.DefaultConfigure;
 import com.github.benhaixiao.concurrent.configure.ThreadPoolConfigure;
 
-import com.github.benhaixiao.concurrent.constants.ThreadPoolType;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Lazy;

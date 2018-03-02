@@ -1,4 +1,4 @@
-package com.github.benhaixiao.concurrent.demo.main;
+package com.github.benhaixiao.concurrent.demo.mainDemo;
 
 import com.github.benhaixiao.concurrent.CustomThreadPool;
 import com.github.benhaixiao.concurrent.CustomThreadPoolManager;
@@ -7,12 +7,12 @@ import com.github.benhaixiao.concurrent.LoggingThreadFactory;
 import com.github.benhaixiao.concurrent.configure.DefaultConfigure;
 import com.github.benhaixiao.concurrent.configure.ThreadPoolConfigure;
 import com.github.benhaixiao.concurrent.configure.ConfigureContext;
-import com.github.benhaixiao.concurrent.constants.ThreadPoolType;
+import com.github.benhaixiao.concurrent.demo.springDemo.ThreadPoolType;
 
 /**
  * @author xiaobenhai
  */
-public class Demo {
+public class Main {
 
     public static void main(String[] args) {
         //xml注入Bean 泛型

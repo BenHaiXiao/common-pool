@@ -1,4 +1,4 @@
-package com.github.benhaixiao.concurrent.demo.spring;
+package com.github.benhaixiao.concurrent.demo.springDemo;
 
 /**
  * @author xiaobenhai

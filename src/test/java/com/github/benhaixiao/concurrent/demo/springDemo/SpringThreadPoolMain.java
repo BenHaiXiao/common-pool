@@ -1,8 +1,6 @@
-package com.github.benhaixiao.concurrent.demo.spring;
+package com.github.benhaixiao.concurrent.demo.springDemo;
 
 import com.github.benhaixiao.concurrent.CustomThreadPool;
-import com.github.benhaixiao.concurrent.ThreadPoolFactory;
-import com.github.benhaixiao.concurrent.constants.ThreadPoolType;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,12 +13,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.concurrent.*;
 
 /**
- * Created by xiaobenhai
+ * @author xiaobenhai
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:common-pool.xml")
-public class ThreadPoolDemo {
-    private static final Logger LOGGER = LoggerFactory.getLogger(ThreadPoolDemo.class);
+@ContextConfiguration(locations = "classpath:application-context-common-pool.xml")
+public class SpringThreadPoolMain {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SpringThreadPoolMain.class);
     private CustomThreadPool threadPool;
     @Autowired
     private ThreadPoolFactory threadPoolFactory;

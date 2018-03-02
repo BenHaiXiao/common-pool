@@ -4,11 +4,11 @@
     <!-- 公共线程池（初始化系统信息等公共操作使用） -->
     <threadPool>
         <key>default</key>
-        <type>1</type><!-- 1:SynchronousQueue ,2:LinkedBlockingQueue,3: -->
-        <corePoolSize>10</corePoolSize>
-        <maxPoolSize>100</maxPoolSize>
-        <timeout>0</timeout>
-        <showThreadQueueSize>10</showThreadQueueSize>
+        <type>1</type><!-- 线程池队列模型 ：LinkedBlockingQueue("1"), SynchronousQueue("2"), LinkedBlockingQueueWithQueueSize("3"), SynchronousQueueWithFair("4") -->
+        <corePoolSize>10</corePoolSize><!-- 最小线程数-->
+        <maxPoolSize>100</maxPoolSize><!-- 最大线程数-->
+        <timeout>0</timeout><!-- 超时时间，0为不进行超时控制-->
+        <showThreadQueueSize>10</showThreadQueueSize><!-- 日志监控，队列中超过该值时候打印告警日志-->
     </threadPool>
     <threadPool>
         <key>thrift</key>
