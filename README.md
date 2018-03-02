@@ -30,9 +30,8 @@ Java开发过程中对线程池java.util.concurrent包下面的使用相当频�
                 <showThreadQueueSize>10</showThreadQueueSize><!-- 日志监控，队列中超过该值时候打印告警日志-->
             </threadPool>
         </root>
-        ```
-      ```
-      //xml注入Bean 泛型
+ 
+         //xml注入Bean 泛型
         ConfigureContext configureContext = new DefaultConfigure<ConfigureContext>().init("/common-config.xml", ConfigureContext.class);
         //使用线程池工具,使用默自定义线程池类型
         ThreadPoolConfigure conf = configureContext.getThreadPoolConfigMap().get(ThreadPoolType.THRIFT.getValue());
@@ -44,7 +43,7 @@ Java开发过程中对线程池java.util.concurrent包下面的使用相当频�
                 System.out.println("Hello World!!!");
             }
         });
-        ```
+         ```
         
    
 ## 相关Demo 
