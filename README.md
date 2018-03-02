@@ -9,6 +9,7 @@ Java开发过程中对线程池java.util.concurrent包下面的使用相当频�
 2. 支持线程可配置化管理，灵活性高；
 3. 支持超时控制。
 该模型在大公司生产环境得到实践验证可行。
+
 ##如何使用common-pool
 
 1. 自定义enum ThreadPoolType线程池。
